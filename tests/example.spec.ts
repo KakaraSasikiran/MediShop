@@ -5,7 +5,7 @@ test.describe("Register Functionality",()=>{
         await page.goto(`${process.env.url!}/MediShopWebApp/login.html`)
     })
 
-    test("Verify registration page controls",async({page,central})=>{
+    test("Verify registration page controls",{tag:'@smoke'},async({page,central})=>{
         // await central.getLogin().perform_fill_the_form()
         // await central.getLogin().perform_reset_password("hello@gmail.com")
         // await central.getLogin().perform_register_your_clinic()
