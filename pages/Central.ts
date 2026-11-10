@@ -1,5 +1,7 @@
 import { Page } from "@playwright/test";
 import { Login } from "./Login";
+import { Orders } from "./Orders";
+import { Home } from "./home";
 
 export class Central{
 
@@ -8,6 +10,12 @@ export class Central{
     }
     getLogin(){
         return new Login(this.page)
+    }
+    getOrders(){
+        return new Orders(this.page)
+    }
+    getHome(){
+        return new Home(this.page)
     }
 
 }
